@@ -1,0 +1,89 @@
+:root {
+  /* Primary */
+  --very-dark-blue: hsl(233, 47%, 7%); /* (main background) */
+  --dark-desaturated-blue: hsl(244, 38%, 16%); /*(card background)*/
+  --soft-violet: hsl(277, 64%, 61%); /*(accent)*/
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%); /*(main heading, stats)*/
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  background-color: var(--dark-desaturated-blue);
+  text-align: center;
+  border-radius: 0.5rem;
+  overflow: auto;
+  width: 20.5rem;
+  margin: auto;
+}
+
+.hero {
+  background: linear-gradient(
+      hsla(277, 64%, 61%, 0.5),
+      hsla(277, 64%, 61%, 0.5)
+    ),
+    url("./images/image-header-mobile.jpg");
+  background-size: cover;
+  height: 15rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.65rem;
+  margin-top: 0.25rem;
+}
+
+p {
+  font-weight: 200;
+  font-family: "Inter";
+  color: var(--slightly-transparent-white);
+  letter-spacing: 0.01rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.accent {
+  color: var(--soft-violet);
+}
+
+ul.stats {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1.75rem;
+}
+
+.number {
+  font-weight: 500;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.stat-label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 2rem;
+}
